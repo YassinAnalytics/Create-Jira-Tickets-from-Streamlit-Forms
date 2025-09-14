@@ -72,9 +72,13 @@ https://www.youtube.com/watch?v=Apb-pMqycrU
 
 ##  How it works
 ⏰ Trigger: Webhook fires when the app submits.
+
 🧹 Guard: Ignore pings/invalid, deduplicate rapid repeats.
+
 🧱 Prepare: Normalize to Jira’s field model (incl. Atlassian doc description).
+
 🧾 Create: POST to /rest/api/3/issue and capture the key.
+
 🔁 Respond: Send { ok, jiraKey, url } back to Streamlit for instant UI feedback.
 
 ## Link
